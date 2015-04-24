@@ -35,13 +35,16 @@ shinyUI(
             'A point is classified as the flower with the nearest center with the point.'
         ),
         h4('Instructions'),
-        p('The values for the variables are selected with the slider. 
+        p('The classification application is in the Application tab on the top. 
+            The values for the variables are selected with the slider. 
             Every time the slider is moved, the new point is projected onto the PC space of the flower data.
             The distance to the cluster centers is calculated and the color and name of the point changes 
             to that one of the nearest flower cluster center.'
         ),
         p('You move the point around and see how it is classified according to its proximity to the center of a cluster.'
-        )
+        ),
+        h4('Source Code'),
+        p('The repository for the app code is in', a('Github.', href = 'https://github.com/alcala21/dataProductApp'))
         ),
         tabPanel('Application',
         titlePanel('Classification of iris flowers'),
